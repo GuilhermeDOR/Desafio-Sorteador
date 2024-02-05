@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+}
+
+.wrapper {
+    background-color: #02182B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+img {
+    border-radius: 50px;
+    background-color: #448FA3;
+    height: 30vh;
+    margin: 30px 0 5px;
+    padding: 10px;
+
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 3px #d7263e86;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+section {
+    background-color: #448FA3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #02182B;
+    text-shadow: 1px 1px 1px #02182B;
+    font-weight: 400;
+}
+
+.inputs {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-number {
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 120px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #02182B;
+
+}
+
+.input-number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    color: #D7263D;
+    background-color: #02182B;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 5px #68deff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.input-answer {
+    background-color: white;
+    box-shadow: 2px 2px 3px #d7263e86;
+    border: none;
+    border-radius: 20px;
+    height: 70px;
+    width: 200px;
+    text-align: center;
+    color: #02182B;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 430px) {
+
+    .wrapper {
+        /* height: auto; */
+    }
+
+    section {
+        padding: 20px 10px;
+        width: 270px;
+    }
+    
+    .input-number {
+        margin: 15px 8px;
+    }
+}
