@@ -15,7 +15,7 @@
     padding: 20px;
 }
 
-img {
+.logo {
     border-radius: 50px;
     background-color: #448FA3;
     height: 30vh;
@@ -95,9 +95,35 @@ button:active {
     opacity: 0.8;
 }
 
+.mask {
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    position: fixed;
+    background-color: #02182be7;
+    width: 100vw;
+    height: 100vh;
+}
+
+.close-button {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    border: 3px black solid;
+    box-shadow: -3px 3px 10px #00d9ff86;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
 .input-answer {
     background-color: white;
-    box-shadow: 2px 2px 3px #d7263e86;
+    box-shadow: -3px 3px 10px #00d9ff86;
     border: none;
     border-radius: 20px;
     height: 70px;
@@ -106,13 +132,10 @@ button:active {
     color: #02182B;
     font-weight: 600;
     font-size: 30px;
+
 }
 
 @media screen and (max-width: 430px) {
-
-    .wrapper {
-        /* height: auto; */
-    }
 
     section {
         padding: 20px 10px;
